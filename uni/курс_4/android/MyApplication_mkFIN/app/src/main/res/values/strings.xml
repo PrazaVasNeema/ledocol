@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="student_showcase_tittle">Студент</string>
+    <string name="student_next_button">next</string>
+    <string name="student_prev_button">prev</string>
+    <string name="student_add_button">+</string>
+    <string name="student_remove_button">-</string>
+    <string name="student_refresh_button">re</string>
+    <string name="student_edit_button">edit</string>
+    <string name="facu_showcase_tittle">Факультет</string>
+    <string name="facu_next_button">next</string>
+    <string name="facu_prev_button">prev</string>
+
+    <string name="student_name">Имя:</string>
+    <string name="student_surname">Фамилия:</string>
+    <string name="student_middle_name">Отчество:</string>
+    <string name="student_addition_date">Дата:</string>
+    <string name="student_facu">Факультет:</string>
+    <string name="student_addition_button">Добавить</string>
+
+    <string name="student_name_error">ФИО должно содержать только буквы</string>
+    <string name="student_facu_name_error">Название факультета должно содержать только буквы</string>
+    <string name="student_date_error">Дата должна иметь формат 01/01/2000 и быть в годовом интервале 1900–2022</string>
+
+    <string name="waitey_waitey">...</string>
+    <string name="waitey_waitey_date">../../....</string>
+    <string name="name_error">ФИО должно содержать только буквы без пробелов</string>
+    <string name="date_error">Дата должна иметь формат дд/мм/гггг и быть в годовом интервале 1900–2005</string>
+    <string name="facu_error">Название факультета должно содержать только буквы без пробелов</string>
+
+</resources>
