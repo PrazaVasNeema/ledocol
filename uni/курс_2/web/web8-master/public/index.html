@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img class="header-image" src="jabba-the-hutt.png" alt="jabba-the-hutt"/>
+        <p class="header-text">form to send</p>
+      </header>
+    <main>
+      <div>
+          <a href="#" class="js-open-modal" data-modal="1">open form</a>
+        </div>
+    <div class="modal" data-modal="1">
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <form id="my-formcarry" accept-charset="UTF-8" class="main">
+            <input type="text" name="name" placeholder="name" required>
+            <input type="email" name="email" id="" placeholder="e-mail" required>
+            <input type="text" name="message" id="" placeholder="message"><br>
+            <label><input type="checkbox" name="checkbox" id="" >Agreed for processing of my personal data</label>
+            <input type="submit" value="send">
+        </form>
+
+    </div>
+    </main>
+    <div class="overlay js-overlay-modal"></div>
+
+    <script src="https://carrier.formcarry.com/js/v1.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

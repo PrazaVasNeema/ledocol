@@ -1,0 +1,76 @@
+body {
+  margin:0
+}
+.header-logo {
+    width:100%; 
+    background-color:#928484; 
+    height:120px;
+    padding:20px;
+    border: 2px solid black;
+  }
+  .logo {
+    float:left;
+    margin-left:40%;
+    height:100px;
+    width:100px
+  }
+  .logo-text {
+    color:#ffffff; 
+    font-size:60px;
+    text-transform: uppercase;
+    margin-bottom:10px;
+  }
+  .nav {
+    text-align:center;
+    background-color:#b4a6a6;
+    margin:auto;
+    margin-top:10px;
+    padding:10px;
+    max-width:1000px;
+    border: 2px solid gray
+  }
+  .nav-link {
+    font-size:20px;
+    text-decoration:#928484;
+    color:#000;
+  }
+  main {
+    background-color:#b4a6a6;
+    margin:auto;
+    max-width:1000px;
+    padding:10px;
+    margin-top:10px;
+    border: 2px solid gray
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td, th {
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .h2-ex {
+      text-align:center;
+      font-size: 40px;
+      margin:0;
+      margin-top:10px;
+  }
+  .form-making{
+    text-align:center;
+  }
+  footer {
+    width:100%; 
+    background-color:#928484;  
+    height:40px;
+    margin-top:10px;
+    padding:10px;
+    padding-top:20px;
+    text-align:center;
+    border: 2px solid black
+  }

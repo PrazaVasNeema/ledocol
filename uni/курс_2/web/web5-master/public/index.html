@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Задание 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+      <header>
+        <img class="header-image" src="jabba-the-hutt.png" alt="jabba-the-hutt"/>
+        <p class="header-text">Lightsabers for sale</p>
+      </header>
+      <main>
+        <div>
+            <form>
+                  <label for="type">Choose a type:</label>
+                  <select id="type" name="type">
+                      <option value="one-handed">one-handed</option>
+                      <option value="dual-bladed">dual-bladed</option>
+                  </select><br>
+                  <label for="colour">Choose a colour:</label>
+                  <select id="colour" name="colour">
+                      <option value="1000">red</option>
+                      <option value="1100">blue</option>
+                      <option value="1800">yellow</option>
+                      <option value="1900">gold</option>
+                      <option value="2200">silver</option>
+                      <option value="3700">green</option>
+                      <option value="8000">purple</option>
+                      <option value="9900">turquoise</option>
+                      <option value="16500">viridian</option>
+                      <option value="19000">sunshine</option>
+                  </select><br>
+                  <label>Enter quantity:</label>
+                  <input name="quantity" type="text"><br>
+                  <button id="click0" type='button'>check</button>
+            </form>
+            <div class="content-preview-lightsaber">
+                <p hidden><span>anonymous</span>, here is ur lightsaber</p>
+                <img hidden id = "content-preview-lightsaber-image"  src="/" alt="lightsaber preview" style="max-width: 105px; margin:auto">
+                <p hidden>at the cost of: <span id ="price"></span></p>
+            </div>
+          </div>
+          <div>
+            <div class="nameChanger">
+                <p>current user: <span>anonymous</span></p>
+                <button id="click1" type="button">change user</button>
+              </div>
+          </div>
+      </main>
+      
+  </body>
+
+</html>

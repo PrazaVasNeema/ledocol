@@ -1,0 +1,40 @@
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(175, 175, 175);
+}
+header {
+    background-color: grey;
+    width:80%;
+    border: 2px solid black;
+    height: 130px;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+}
+header>p {
+    color:rgb(209, 201, 201);
+    font-size:80px;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top:40px;
+    -webkit-text-stroke: 1px black;
+}
+main >div{
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+}
+form {
+    background-color:grey;
+    justify-content: center;
+    text-align:center;
+    padding: 5px;
+}
+select {
+    width: 150px;
+    margin: 10px;
+}
+button{
+    margin-top: 5px; width: 100px; height: 50px;font-size: 20px;
+}

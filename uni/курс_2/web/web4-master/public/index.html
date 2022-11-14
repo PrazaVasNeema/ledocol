@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Задание 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body class="m-0" style="background-color: rgb(240, 169, 147);">
+<header>
+            <div class="d-flex justify-content-center header-logo">
+        <img class="logo" src="logo.png" alt="avengers recruitment center" />
+            <p class="logo-text mt-3"> UI4 </p>
+        </div>
+    </header>  
+<div class="row">
+<div class="col-2 sides"></div>
+<div class="col-md-8 p-0 mb-2">
+    <nav class="navbar navbar-expand-md  justify-content-md-center navv">
+    <ul class=" navbar-nav">
+        <li class="nav-item"> <a class="nav-linkk p-2" href="/">Главная страница</a></li>
+        <li class="nav-item"> <a class="nav-linkk p-2" href="http://d.kakaulin.gitlab.io/web1/">задание 1</a></li>
+        <li class="nav-item"> <a class="nav-linkk p-2" href="http://d.kakaulin.gitlab.io/web2/">задание 2</a></li>
+        <li class="nav-item"> <a class="nav-linkk p-2" href="http://d.kakaulin.gitlab.io/web3/">задание 3</a></li>
+    </ul>
+    </nav>
+    <div class="container-fluid">
+        <div class="main-flex mt-2 row">
+            <div class="order-1">
+        <h2 class="h2-links" id="list">Список гиперссылок</h2>
+        <ol>
+        <li><span>абсолютную гиперссылку на главную страницу сайта example.com - </span> 
+            <a href="http://example.com">http://example.com</a></li>
+        <li><span>абсолютную на главную сайта example.com в протоколе https - </span> 
+            <a href="https://example.com">https://example.com</a></li>
+        <li><span>ссылку на файл на сервере FTP без авторизации - </span> 
+            <a href="ftp://example.com/file.txt">ftp://example.com/file.txt</a></li>
+        <li><span>ссылку на файл на сервере FTP с авторизацией - </span> 
+            <a href="ftp://login:password@example.com/file.txt">ftp://login:password@example.com/file.txt</a></li>
+        <li><span>ссылку на фрагмент страницы некоторого сайта - </span> 
+            <a href="http://tehnopost.info/10-yakor-ankor-na-veb-stranice.html#ssilka">http://tehnopost.info/10-yakor-ankor-na-veb-stranice.html#ssillka</a></li>
+        <li><span>ссылку на фрагмент текущей страницы - </span> 
+            <a href="#forma">форма</a></li>
+        <li><span>ссылку с двумя параметрами в URL - </span> 
+            <a href="http://socks-for-sale.com?color=pink&size=s">http://socks-for-sale.com?color=pink&size=s</a></li>
+        <li><span> список ссылок основной навигации сайта с подписями title: </span><br />
+            <ol><li> <a href="#list" title="список гиперссылок">список</a></li>
+                <li><a href="#forma" title="форма в конце задания">форма</a></li>
+                <li><a href="#table" title="таблица">таблица</a></li>
+            </ol></li>
+        <li><span>ссылку без href - </span> 
+            <a>ссылка</a></li>
+        <li><span>ссылку с пустым href - </span> 
+            <a href="">ссылка</a></li>
+        <li><span>ссылку, по которой запрещен переход поисковикам - </span> 
+            <a href="http://example.com" rel="nofollow">http://example.com вместе с nofollow</a></li>
+        <li><span>запрещенную для индексации поисковиками - </span> 
+            <a href="http://example.com" rel="noindex">http://example.com вместе с noindex</a></li>
+        <li>контекстную в тексте абзаца - 
+            <a href="http://seo-dnevnik.ru/zarabotok-na-bloge/chto-takoe-kontekstnye-ssylki.html">Контекстные ссылки </a> — ссылки, помещенные в текст уже написанной статьи. Некоторые сервисы используют это понятие как отдельный формат рекламы.</li>
+        <li><span>ссылку-изображение - </span> 
+            <a href="https://en.wikipedia.org/wiki/Allamanda"> <img src="image.jpg" width="280" height="210" alt="Flower"></a></li>
+        <li>ссылки из прямоугольных и круглых областей картинки (HTML-тег map): <br /><img src="squares.jpg"  alt="Squares" usemap="#squares" onclick=showCoords(event)>
+            <map name="squares">
+                <area shape="rect" coords="37,115,195,278" href="https://deti-online.com/learning/vyrezanie-iz-bumagi/kvadraty/" alt="Cian">
+                <area shape="rect" coords="101,296,229,423" href="https://deti-online.com/learning/vyrezanie-iz-bumagi/kvadraty/" alt="Orange">
+                <area shape="rect" coords="250,116,466,325" href="https://deti-online.com/learning/vyrezanie-iz-bumagi/kvadraty/" alt="Pink">
+                <area shape="circle" coords="279,50,20" href="https://deti-online.com/learning/vyrezanie-iz-bumagi/kvadraty/" alt="Red">
+            </map></li>
+        <li><span>относительную на страницу в текущем каталоге - </span> 
+            <a href="index2.html"> index2.html </a></li>
+        <li><span>относительную на страницу в каталоге about - </span> 
+            <a href="about/index2.html"> about/index2.html </a></li>
+        <li><span>относительную на страницу в каталоге уровнем выше текущего - </span> 
+            <a href="../index2.html"> ../index2.html </a></li>
+        <li><span>относительную на страницу в каталоге двумя уровнями выше - </span> 
+            <a href="../../index2.html"> ../../index2.html </a></li>
+        <li><span>сокращенную на главную - </span> 
+            <a href="/"> / </a></li>
+        <li><span>сокращенную ссылку на внутреннюю - </span> 
+            <a href="/internal"> /internal </a></li>
+        </ol>
+    </div>
+        <div class="order-3 order-md-2">
+        <h2 class="h2-table" id="table">Таблица</h2> 
+        <table>
+    <tr>
+      <td rowspan="2">Игровая консоль</td>
+      <th colspan="2">playstation 5</th>
+      <th colspan="2">xbox series</th>
+    </tr>
+    <tr>
+        <td>Digital edition</td>
+        <td>Normal edition</td>
+        <td>s</td>
+        <td>x</td>
+    </tr>
+    <tr>
+      <td>Наличие привода</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>memory</td>
+      <td>16GB GDDR6/256-bit</td>
+      <td>16GB GDDR6/256-bit</td>
+      <td>16 GB GDDR6 w/ 320b bus</td>
+      <td>16 GB GDDR6 w/ 320b bus</td>
+    </tr>
+    <tr>
+      <td>электропитание</td>
+      <td>340w</td>
+      <td>350w</td>
+      <td>400w</td>
+      <td>400w</td>
+    </tr>
+    <tr>
+      <td>процессор</td>
+      <td>x86-64-AMD Ryzen Zen 8 Cores / 16 Threads at 3.5GHz (variable frequency)</td>
+      <td>x86-64-AMD Ryzen Zen 8 Cores / 16 Threads at 3.5GHz (variable frequency)</td>
+      <td>3.8 GHz (3.6 GHz w/ SMT) Custom Zen 2 CPU</td>
+      <td>3.8 GHz (3.6 GHz w/ SMT) Custom Zen 2 CPU</td>
+    </tr>
+    <tr>
+      <td>ssd</td>
+      <td>1TB</td>
+      <td>1TB</td>
+      <td>512GB</td>
+      <td>1TB</td>
+    </tr>
+    <tr>
+      <td>Expandable Storage</td>
+      <td>NVMe SSD Slot</td>
+      <td>NVMe SSD Slot</td>
+      <td>1TB Expansion Card (matches internal storage exactly)</td>
+      <td>1TB Expansion Card (matches internal storage exactly)</td>
+    </tr>
+          </table>
+        </div>
+          <div class="order-2 order-md-3" style="width: 100%;">
+          <h2 class="h2-forma" id="forma">Форма</h2>
+        <form class="form-making" action="/" method="POST">
+    <label>
+        Напишите Ваш псевдоним:<br />
+        <input  name="field-name-1" onfocus="this.value=''" value="Псевдоним" type="text" />
+        </label><br />
+    <label>
+        Напишите Ваш контактный e-mail:<br />
+        <input name="field-email" onfocus="this.value=''" value="youremail@example.com" type="email" />
+        </label><br />
+    <label>
+        Напишите Вашу дату рождения:<br /> 
+        <input name="field-date" value="2019-08-13" type="date" />
+        </label><br />
+        Выберите свой пол:<br />
+        <label><input type="radio"
+        name="sex-group-1" value="rad1" />Мужчина
+        </label>
+        <label><input type="radio"
+        name="sex-group-1" value="rad2" />Женщина
+        </label><br />
+        Количество конечностей:<br />      
+    <label><input type="radio"
+        name="radio-group-2" value="rad1" />Четное
+        </label>
+        <label><input type="radio"
+        name="radio-group-2" value="rad2" />Нечетное
+        </label><br />
+    <label>
+    Сверхспособности:<br />
+        <select name="field-name-2[]"
+        multiple="multiple">
+        <option value="mult1">Бессметрие</option>
+        <option value="mult2">Прохождение сквозь стены</option>
+        <option value="mult3">Левитация</option>
+        </select>
+        </label><br />
+    <label>
+    Напишите свою биографию:<br />
+        <textarea name="field-name-2" onfocus="this.value=''">...</textarea>
+        </label><br />
+    <label><input type="checkbox" name="check-1" /> С контрактом ознакомлен</label><br />
+    <input type="submit" value="Отправить">
+        </form>
+    </div>
+    </div>
+</div>
+</div>
+<div class="col-2 sides"></div>
+</div>
+<footer>
+
+<div class="d-flex justify-content-center pt-3">(с) Какаулин Дмитрий 2020</div>
+
+</footer>
+  </body>
+</html>

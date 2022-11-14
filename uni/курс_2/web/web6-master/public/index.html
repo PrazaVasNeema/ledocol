@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Задание 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+      <header>
+        <img class="header-image" src="../web5/jabba-the-hutt.png" alt="jabba-the-hutt"/>
+        <p class="header-text">stuff for sale</p>
+      </header>
+      <main>
+        <div>
+            <form>
+              <select name="stuff_type">
+                <option value="0">lightsaber</option>
+                <option value="1">blaster</option>
+                <option value="2">robe</option>
+              </select><br>
+              <label>Enter quantity:</label>
+                  <input name="quantity" type="text" style="margin-bottom: 10px;"><br>
+              <div id="lightsaber_type">
+                <label><input type="radio" name="lightsaber_type" value="lightsaber"> lightsaber</label>
+                <label><input type="radio" name="lightsaber_type" value="double_bladed"> double-bladed</label>
+                <label><input type="radio" name="lightsaber_type" value="short"> short</label>
+              </div>
+              <div id="blaster_features">
+                <label><input type="checkbox" name="prop1"> Targeting Scope</label>
+                <label><input type="checkbox" name="prop2"> Ion Charger</label>
+                <label><input type="checkbox" name="prop3"> Mandalorian Chamber</label>
+              </div>
+            </form>
+            <div class="content-preview-stuff">
+              <div>
+                <p><span>anonymous</span>, here is ur stuff</p>
+                <img id = "content-preview-stuff-image"  src="/" alt="stuff preview" style="max-width: 105px; margin:auto">
+                <p>at the cost of: <span id ="price"></span></p>
+              </div>
+              <div>
+                <p><span>anonymous</span>,</p>
+                
+                <p>please enter quantity</p>
+                
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="nameChanger">
+                <p>current user: <span>anonymous</span></p>
+                <button id="click1" type="button">change user</button>
+              </div>
+          </div>
+      </main>
+      
+  </body>
+
+</html>
