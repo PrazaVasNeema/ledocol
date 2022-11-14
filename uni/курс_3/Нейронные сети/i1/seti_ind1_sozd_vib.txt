@@ -1,0 +1,64 @@
+#include <random>
+#include <iostream>
+#include <fstream>
+#include <math.h>
+using namespace std;
+double F(double x, double a, double b, int c, int A) {
+    return A * (pow(x, 3) / 3.0 - (a + b) / 2 * pow(x, 2) + a * b * x + c);
+}
+int main()
+{
+    double num[10], num_val[10], temp;
+    int N, a, b, minmax1, minmax2, c;
+    ofstream file("C://Limbo//file.txt");
+    cout << "N: ";
+    cin >> N;
+//    cout << "a: ";
+//    cin >> a;
+//    cout << "b: ";
+//    cin >> b;
+    random_device dev;
+    mt19937 rng(dev());
+    uniform_int_distribution<mt19937::result_type> minmax1_rand(1, 30); // distribution in range [1, 6]
+    uniform_int_distribution<mt19937::result_type> minmax2_rand(1, 30);
+    uniform_int_distribution<mt19937::result_type> dist2(1, 100);
+    for (int i = 0; i < N; i++) {
+        minmax1 = minmax1_rand(rng);
+        minmax2 = minmax2_rand(rng);
+        c = 0;
+        if (minmax1 == minmax2) {
+            i--;
+            continue;
+        }
+        if (minmax1 > minmax2) {
+            a = minmax2;
+            b = minmax1;
+        }
+        else {
+            a = minmax1;
+            b = minmax2;
+        }
+        while (F(b, a, b, c, 1) < 0)
+            c += 10;
+        file << a << '\t' << b << '\t' << c << '\t' << 1 << '\t';
+        uniform_int_distribution<mt19937::result_type> dist1(a - 1, b);
+        for (int j = 0; j < 10; j++)
+            num[j] = dist1(rng) + dist2(rng) / 100.0;
+        //        num[i][0] = a - 1;
+        //        num[i][9] = b + 1;
+        for (int j = 0; j < 10; j++)
+            for (int h = 0; h < 10 - j - 1; h++)
+                if (num[h] > num[h + 1]) {
+                    temp = num[h + 1];
+                    num[h + 1] = num[h];
+                    num[h] = temp;
+                }
+        for (int j = 0; j < 10; j++)
+            file << num[j] << '\t';
+        for (int j = 0; j < 10; j++) {
+            num_val[j] = F(num[j], a, b, c, 1);
+            file << num_val[j] << '\t';
+        }
+        file << F(b, a, b, c, 1) << '\t' << F(a, a, b, c, 1) << endl;
+    }
+}
