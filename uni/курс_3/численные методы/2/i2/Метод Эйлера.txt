@@ -1,0 +1,35 @@
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+using namespace std;
+double Adams(double x[1000], double h, double y_prev, double y_cur, double y_next, double(*F)(double, double), int n) {
+	//y_cur = y_cur + h * F(x[i - 1], y_cur);
+	for (int i = 1; i <= n; i++) {
+		x[i] = h * i;
+		y_next = y_cur + h * F(x[i - 1], y_cur);
+		y_cur = y_next;
+		cout << endl << y_next << endl;
+	}
+	return y_next;
+}
+double primer1(double, double);
+void main() {
+	setlocale(LC_ALL, "Russian");
+	int n;
+	double a, b, x[1000], h, y_prev, y_cur = 0, y_next = 0;
+	cout << "введите b: ";
+	cin >> b;
+	cout << ("Введите количество разбиений n: ");
+	cin >> n;
+	h = b / n;
+	cout << h;
+	x[0] = 0;
+	y_prev = -1;
+	y_cur = -1;
+	y_next = Adams(x, h, y_prev, y_cur, y_next, primer1, n);
+	cout << y_next;
+}
+
+double primer1(double x, double y) {
+	return 1 / (x + 2 * y);
+}

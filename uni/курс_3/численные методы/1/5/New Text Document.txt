@@ -1,0 +1,2 @@
+5/(e^pi+2)*e^(2*x)*cos(x)
+https://www.integral-calculator.ru/
