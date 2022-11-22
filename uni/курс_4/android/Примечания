@@ -1,0 +1,8 @@
+appStudents:
+
+Скачать зависимости preference и gson
+Добавить строчки
+def lifecycle_version = "2.5.1"
+implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+в build.gradle, чтобы принудительно использовать одну версию зависимости
